@@ -1,0 +1,867 @@
+visual image width and height= 160x80
+image width and height= 160x80
+(bin size) radRangeForOneBin= 20 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees
+
+BIN = 0:
+ -- current direction= 10 degrees
+
+BIN = 1:
+ -- current direction= 30 degrees
+
+BIN = 2:
+ -- current direction= 50 degrees
+
+BIN = 3:
+ -- current direction= 70 degrees
+
+BIN = 4:
+ -- current direction= 90 degrees
+
+BIN = 5:
+ -- current direction= 110 degrees
+
+BIN = 6:
+ -- current direction= 130 degrees
+
+BIN = 7:
+ -- current direction= 150 degrees
+
+BIN = 8:
+ -- current direction= 170 degrees

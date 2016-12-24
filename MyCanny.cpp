@@ -40,6 +40,26 @@ Mat angle_hist;
 bool uniform = true;
 bool myAccumulate = false;
 int channels[1];
+
+int threshold_value = 0;
+int threshold_type = 0;;
+int const max_value = 255;
+int const max_type = 4;
+int const max_BINARY_value = 255;
+char* trackbar_type = "Type: \n 0: Binary \n 1: Binary Inverted \n 2: Truncate \n 3: To Zero \n 4: To Zero Inverted";
+char* trackbar_value = "Value";
+Mat binaryImage;
+char* binary_window_name = "Binary";
+/// Function headers
+void Binary_Demo(int, void*);
+
+//Brightness and Contrast Correction
+Mat BrightContrastImage;
+float clipHistPercent = 0;
+//void BrightnessAndContrastAuto(const cv::Mat &src, cv::Mat dst);
+
+//Equalized Image
+Mat equalizedImg;
 //----------------------------------------------------
 //![variables]
 string type2str(int type) {
@@ -108,10 +128,10 @@ cv::MatND getHistogram(const cv::Mat &data) {
 			Scalar(255, 0, 0), 2, 8, 0);
 	}
 
-	namedWindow("Result", 1);    imshow("Result", histImage);
+	//namedWindow("Result", 1);    imshow("Result", histImage);
 	myHistogramFile2.close();
 	//waitKey(0);
-	return hist;
+	return histImage;
 }
 
 // Computes the 1D histogram and returns an image of it.
@@ -150,12 +170,12 @@ static void CannyThreshold(int, void*)
 	blur(src_gray, detected_edges, Size(3, 3));
 	//![reduce_noise]
 	//cout << "src_gray = " << (double)src_gray.at<uchar>(2, 23) << "\n";
-	//imshow("src_gray", src_gray);
+	imshow("Blurred Image", detected_edges);
 	//![canny]
 	//Canny detector
 	Canny(detected_edges, detected_edges, lowThreshold, lowThreshold*ratio, kernel_size);
 	//![canny]
-
+	imshow("Canny Image", detected_edges);
 	//-----------------------------------------------------------------------------------
 	//int ddepth = CV_32FC1;// CV_16S;
 	//int scale = 1;
@@ -290,6 +310,86 @@ static void CannyThreshold(int, void*)
 	//![display]
 }
 
+///**
+//*  \brief Automatic brightness and contrast optimization with optional histogram clipping
+//*  \param [in]src Input image GRAY or BGR or BGRA
+//*  \param [out]dst Destination image
+//*  \param clipHistPercent cut wings of histogram at given percent tipical=>1, 0=>Disabled
+//*  \note In case of BGRA image, we won't touch the transparency
+//*/
+//void BrightnessAndContrastAuto(const cv::Mat &src3, cv::Mat dst3)
+//{
+//
+//	CV_Assert(clipHistPercent >= 0);
+//	CV_Assert((src3.type() == CV_8UC1) || (src3.type() == CV_8UC3) || (src3.type() == CV_8UC4));
+//
+//	int histSize = 256;
+//	float alpha, beta;
+//	double minGray = 0, maxGray = 0;
+//
+//	//to calculate grayscale histogram
+//	cv::Mat gray3;
+//	if (src3.type() == CV_8UC1) gray3 = src3;
+//	else if (src3.type() == CV_8UC3) cvtColor(src3, gray3, CV_BGR2GRAY);
+//	else if (src3.type() == CV_8UC4) cvtColor(src3, gray3, CV_BGRA2GRAY);
+//	if (clipHistPercent == 0)
+//	{
+//		// keep full available range
+//		cv::minMaxLoc(gray3, &minGray, &maxGray);
+//	}
+//	else
+//	{
+//		cv::Mat hist; //the grayscale histogram
+//
+//		float range[] = { 0, 256 };
+//		const float* histRange = { range };
+//		bool uniform = true;
+//		bool accumulate = false;
+//		calcHist(&gray3, 1, 0, cv::Mat(), hist, 1, &histSize, &histRange, uniform, accumulate);
+//
+//		// calculate cumulative distribution from the histogram
+//		std::vector<float> accumulator(histSize);
+//		accumulator[0] = hist.at<float>(0);
+//		for (int i = 1; i < histSize; i++)
+//		{
+//			accumulator[i] = accumulator[i - 1] + hist.at<float>(i);
+//		}
+//
+//		// locate points that cuts at required value
+//		float max = accumulator.back();
+//		clipHistPercent *= (max / 100.0); //make percent as absolute
+//		clipHistPercent /= 2.0; // left and right wings
+//								// locate left cut
+//		minGray = 0;
+//		while (accumulator[minGray] < clipHistPercent)
+//			minGray++;
+//
+//		// locate right cut
+//		maxGray = histSize - 1;
+//		while (accumulator[maxGray] >= (max - clipHistPercent))
+//			maxGray--;
+//	}
+//
+//	// current range
+//	float inputRange = maxGray - minGray;
+//
+//	alpha = (histSize - 1) / inputRange;   // alpha expands current range to histsize range
+//	beta = -minGray * alpha;             // beta shifts current range so that minGray will go to 0
+//
+//										 // Apply brightness and contrast normalization
+//										 // convertTo operates with saurate_cast
+//	src3.convertTo(dst, -1, alpha, beta);
+//
+//	// restore alpha channel from source 
+//	if (dst3.type() == CV_8UC4)
+//	{
+//		int from_to[] = { 3, 3 };
+//		cv::mixChannels(&src3, 4, &dst3, 1, from_to, 1);
+//	}
+//	BrightContrastImage = dst3;
+//	imshow("BrightContrastImage", dst3);
+//	return;
+//}
 
 /**
 * @function main
@@ -299,7 +399,7 @@ int main(int argc, const char** argv)
 {
 	//![load]
 	//src = imread(argv[1], IMREAD_COLOR); // Load an image
-	src = imread("20161215 02.33_368.jpg", CV_LOAD_IMAGE_UNCHANGED); //read the image data in the file "MyPic.JPG" and store it in 'img'
+	src = imread("20161215 02.33_368L.jpg", CV_LOAD_IMAGE_UNCHANGED); //read the image data in the file "MyPic.JPG" and store it in 'img'
 	imshow("oRIGINAL iMAGE", src);
 
 	if (src.empty())
@@ -316,21 +416,70 @@ int main(int argc, const char** argv)
 	//![convert_to_gray]
 	cvtColor(src, src_gray, COLOR_BGR2GRAY);
 	//![convert_to_gray]
+	imshow("GrayScale Image", src_gray);
+	//Mat tempImage = src;
+	//BrightnessAndContrastAuto(src, tempImage);
+	Mat img = src_gray;
 
-	//![create_window]
-	//namedWindow(window_name, WINDOW_AUTOSIZE);
-	//![create_window]
+	equalizeHist(img, equalizedImg);
+	imshow("Equalized Image", equalizedImg);
+	MatND myEqualHist = getHistogram(equalizedImg);
+	imshow("Histogram of Equalized IMage", myEqualHist);
+	//----------- HISTOGRAM OF ORIGINAL IMAGE ----------------------------------------------
+	/// Compute the histograms:
+	MatND myHistOrig = getHistogram(src_gray);
+	imshow("Histogram of Original", myHistOrig);
 
-	////![create_trackbar]
-	///// Create a Trackbar for user to enter threshold
-	//createTrackbar("Min Threshold:", window_name, &lowThreshold, max_lowThreshold, CannyThreshold);
-	////![create_trackbar]
 
-	/// Show the image
-	CannyThreshold(0, 0);
 
+
+
+	//----------- HISTOGRAM OF ORIGINAL IMAGE ----------------------------------------------
+	//----------- HISTOGRAM OF EQUALIZED IMAGE ----------------------------------------------
+	/// Compute the histograms:
+	MatND myHistOrig = getHistogram(src_gray);
+	imshow("Histogram of Original", myHistOrig);
+
+
+
+
+
+	//----------- HISTOGRAM OF EQUALIZED IMAGE ----------------------------------------------
+
+	//----------- BINARY ----------------------------------------------
+	/// Create a window to display results
+	namedWindow(binary_window_name, CV_WINDOW_AUTOSIZE);
+	/// Create Trackbar to choose type of Threshold
+	createTrackbar(trackbar_value,
+		binary_window_name, &threshold_value,
+		max_value, Binary_Demo);
+	
+	/// Call the function to initialize
+	Binary_Demo(0, 0);
+
+	/// Wait until user finishes program
+	while (true)
+	{
+		int c;
+		c = waitKey(20);
+		if ((char)c == 27)
+		{
+			break;
+		}
+	}
+
+}
+
+
+/**
+* @function Binary_Demo
+*/
+void Binary_Demo(int, void*)
+{
+	threshold(src_gray, binaryImage, threshold_value, max_BINARY_value, threshold_type);
+
+	imshow(binary_window_name, binaryImage);
 	/// Wait until user exit program by pressing a key
 	waitKey(0);
-
-	return 0;
 }
+//----------- BINARY ----------------------------------------------

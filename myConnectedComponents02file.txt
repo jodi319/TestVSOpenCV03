@@ -1,0 +1,16 @@
+SRC Image Size= [400 x 800]
+SRC Image Type= 16
+
+connectedComponentsWithStats Image Size= 4
+connectedComponentsWithStats Labels Size (w,h)= 5, 4
+connectedComponentsWithStats Labels= [0, 55, 400, 689, 137389;
+ 0, 0, 400, 310, 98197;
+ 0, 460, 400, 340, 69510;
+ 144, 531, 92, 162, 14904]
+
+connectedComponentsWithStats Stats Size(w,h)= 2, 4
+connectedComponentsWithStats Stats= [196.4025940941415, 434.8283487033169;
+ 198.5803130441867, 156.7335254641181;
+ 209.0655301395483, 627.1732124874119;
+ 189.5, 611.5]
+

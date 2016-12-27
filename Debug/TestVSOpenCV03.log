@@ -1,5 +1,3 @@
-﻿  MyCanny.cpp
-c:\users\jw\documents\visual studio 2015\projects\testvsopencv03\testvsopencv03\mycanny.cpp(244): warning C4018: '<': signed/unsigned mismatch
-c:\users\jw\documents\visual studio 2015\projects\testvsopencv03\testvsopencv03\mycanny.cpp(249): warning C4018: '<': signed/unsigned mismatch
+﻿  ConnectedComponents02.cpp
   TestVSOpenCV03.vcxproj -> C:\Users\JW\Documents\Visual Studio 2015\Projects\TestVSOpenCV03\Debug\TestVSOpenCV03.exe
   TestVSOpenCV03.vcxproj -> C:\Users\JW\Documents\Visual Studio 2015\Projects\TestVSOpenCV03\Debug\TestVSOpenCV03.pdb (Full PDB)

@@ -149,6 +149,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AccessingPixels.cpp" />
+    <ClCompile Include="ConnectedComponents01.cpp" />
+    <ClCompile Include="ConnectedComponents02.cpp" />
     <ClCompile Include="contours.cpp" />
     <ClCompile Include="hog01.cpp" />
     <ClCompile Include="hog02.cpp" />
@@ -166,8 +168,12 @@
     <ClCompile Include="MyRegionGrowing02.cpp" />
     <ClCompile Include="MyRegionGrowing03.cpp" />
     <ClCompile Include="MySobel.cpp" />
+    <ClCompile Include="OpenCVversion.cpp" />
     <ClCompile Include="SelectROI.cpp" />
     <ClCompile Include="Thresholding01.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OpenCVversion.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

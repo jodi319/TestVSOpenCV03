@@ -90,7 +90,7 @@
 //	cv::MatND hist;
 //
 //	ofstream myHistogramFile2;
-//	myHistogramFile2.open("myHistogramFile2.txt", ios::app);
+//	myHistogramFile2.open("myHistogramFile2.txt");
 //
 //	// Compute histogram
 //	//calcHist(&data, 1, 0, Mat(), angle_hist, 1, &histSize, &histRange, uniform, myAccumulate);
@@ -163,8 +163,9 @@
 //* @function CannyThreshold
 //* @brief Trackbar callback - Canny thresholds input with a ratio 1:3
 //*/
-//static void CannyThreshold(int, void*)
+//static void CannyThreshold(const cv::Mat &data)
 //{
+//
 //	//![reduce_noise]
 //	//Reduce noise with a kernel 3x3
 //	blur(src_gray, detected_edges, Size(3, 3));
@@ -226,7 +227,7 @@
 //	cout << "Matrix: \n" << ty.c_str() << " " << Angle.cols << "x" << Angle.rows << "\n";
 //	////----------------------------------------------------
 //	ofstream myAngleFile;
-//	myAngleFile.open("myAngle.csv", ios::app);
+//	myAngleFile.open("myAngle.csv");
 //	//myAnglefile << Angle;
 //	myAngleFile << "Original Image size= " << src.size() << "\n";
 //	myAngleFile << "Angle size= " << Angle.size() << "\n";
@@ -417,56 +418,58 @@
 //	cvtColor(src, src_gray, COLOR_BGR2GRAY);
 //	//![convert_to_gray]
 //	imshow("GrayScale Image", src_gray);
+//
+//	CannyThreshold(src_gray);
+//
 //	//Mat tempImage = src;
 //	//BrightnessAndContrastAuto(src, tempImage);
 //	Mat img = src_gray;
 //
 //	equalizeHist(img, equalizedImg);
-//	imshow("Equalized Image", equalizedImg);
-//	MatND myEqualHist = getHistogram(equalizedImg);
-//	imshow("Histogram of Equalized IMage", myEqualHist);
+//	//imshow("Equalized Image", equalizedImg);
+//	//MatND myEqualHist = getHistogram(equalizedImg);
+//	//imshow("Histogram of Equalized IMage", myEqualHist);
 //	//----------- HISTOGRAM OF ORIGINAL IMAGE ----------------------------------------------
 //	/// Compute the histograms:
-//	MatND myHistOrig = getHistogram(src_gray);
-//	imshow("Histogram of Original", myHistOrig);
+//	//MatND myHistOrig = getHistogram(src_gray);
+//	//imshow("Histogram of Original", myHistOrig);
 //
 //
 //
 //
 //
-//	//----------- HISTOGRAM OF ORIGINAL IMAGE ----------------------------------------------
+//	//---------------------------------------------------------------------------------------
 //	//----------- HISTOGRAM OF EQUALIZED IMAGE ----------------------------------------------
 //	/// Compute the histograms:
 //	//MatND myHistOrig = getHistogram(src_gray);
-//	imshow("Histogram of Original", myHistOrig);
+//	//imshow("Histogram of Original", myHistOrig);
 //
 //
 //
 //
 //
-//	//----------- HISTOGRAM OF EQUALIZED IMAGE ----------------------------------------------
-//
+//	//----------------------------------------------------------------------------------------
 //	//----------- BINARY ----------------------------------------------
-//	/// Create a window to display results
-//	namedWindow(binary_window_name, CV_WINDOW_AUTOSIZE);
-//	/// Create Trackbar to choose type of Threshold
-//	createTrackbar(trackbar_value,
-//		binary_window_name, &threshold_value,
-//		max_value, Binary_Demo);
-//	
-//	/// Call the function to initialize
-//	Binary_Demo(0, 0);
+//	///// Create a window to display results
+//	//namedWindow(binary_window_name, CV_WINDOW_AUTOSIZE);
+//	///// Create Trackbar to choose type of Threshold
+//	//createTrackbar(trackbar_value,
+//	//	binary_window_name, &threshold_value,
+//	//	max_value, Binary_Demo);
+//	//
+//	///// Call the function to initialize
+//	//Binary_Demo(0, 0);
 //
-//	/// Wait until user finishes program
-//	while (true)
-//	{
-//		int c;
-//		c = waitKey(20);
-//		if ((char)c == 27)
-//		{
-//			break;
-//		}
-//	}
+//	///// Wait until user finishes program
+//	//while (true)
+//	//{
+//	//	int c;
+//	//	c = waitKey(20);
+//	//	if ((char)c == 27)
+//	//	{
+//	//		break;
+//	//	}
+//	//}
 //
 //}
 //
@@ -482,4 +485,4 @@
 //	/// Wait until user exit program by pressing a key
 //	waitKey(0);
 //}
-////----------- BINARY ----------------------------------------------
+////--------------------------------------------------------------------------------------

@@ -151,12 +151,14 @@
     <ClCompile Include="AccessingPixels.cpp" />
     <ClCompile Include="ConnectedComponents01.cpp" />
     <ClCompile Include="ConnectedComponents02.cpp" />
+    <ClCompile Include="ConnectedComponents03.cpp" />
     <ClCompile Include="contours.cpp" />
     <ClCompile Include="hog01.cpp" />
     <ClCompile Include="hog02.cpp" />
     <ClCompile Include="hog03.cpp" />
     <ClCompile Include="MyCanny.cpp" />
     <ClCompile Include="MyCannySlider.cpp" />
+    <ClCompile Include="MyEdgeDetector.cpp" />
     <ClCompile Include="MyFloodFill.cpp" />
     <ClCompile Include="MyFloodFillPerPixel.cpp" />
     <ClCompile Include="MyFloodFillZoom.cpp" />

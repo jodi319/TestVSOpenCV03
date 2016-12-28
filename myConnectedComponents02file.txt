@@ -1,16 +1,44 @@
-SRC Image Size= [400 x 800]
+SRC Image Size= [640 x 480]
 SRC Image Type= 16
 
-connectedComponentsWithStats Image Size= 4
-connectedComponentsWithStats Labels Size (w,h)= 5, 4
-connectedComponentsWithStats Labels= [0, 55, 400, 689, 137389;
- 0, 0, 400, 310, 98197;
- 0, 460, 400, 340, 69510;
- 144, 531, 92, 162, 14904]
+Number of connected components = 4
 
-connectedComponentsWithStats Stats Size(w,h)= 2, 4
-connectedComponentsWithStats Stats= [196.4025940941415, 434.8283487033169;
- 198.5803130441867, 156.7335254641181;
- 209.0655301395483, 627.1732124874119;
- 189.5, 611.5]
+Component 1
+CC_STAT_LEFT   = 0
+CC_STAT_TOP    = 0
+CC_STAT_WIDTH  = 640
+CC_STAT_HEIGHT = 299
+CC_STAT_AREA   = 77049
+CENTER   = (229.214,86.0794)
+
+Component 2
+CC_STAT_LEFT   = 263
+CC_STAT_TOP    = 222
+CC_STAT_WIDTH  = 377
+CC_STAT_HEIGHT = 63
+CC_STAT_AREA   = 16497
+CENTER   = (429.454,261.135)
+
+Component 3
+CC_STAT_LEFT   = 152
+CC_STAT_TOP    = 326
+CC_STAT_WIDTH  = 488
+CC_STAT_HEIGHT = 154
+CC_STAT_AREA   = 44752
+CENTER   = (365.611,428.993)
+
+
+
+connectedComponentsWithStats Image Size= 4
+connectedComponentsWithStats Labels Size (w,h)= 2, 4
+connectedComponentsWithStats Labels= [337.7293578524825, 257.1659719837539;
+ 229.2141234798635, 86.0794169943802;
+ 429.4539007092199, 261.1347517730496;
+ 365.6108330353951, 428.9926707186271]
+
+connectedComponentsWithStats Stats Size(w,h)= 5, 4
+connectedComponentsWithStats Stats= [0, 66, 640, 414, 168902;
+ 0, 0, 640, 299, 77049;
+ 263, 222, 377, 63, 16497;
+ 152, 326, 488, 154, 44752]
 

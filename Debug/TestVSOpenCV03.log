@@ -1,3 +1,9 @@
-﻿  ConnectedComponents02.cpp
+﻿  MyEdgeDetector.cpp
+c:\users\jw\documents\visual studio 2015\projects\testvsopencv03\testvsopencv03\myedgedetector.cpp(155): warning C4018: '<': signed/unsigned mismatch
+c:\users\jw\documents\visual studio 2015\projects\testvsopencv03\testvsopencv03\myedgedetector.cpp(160): warning C4018: '<': signed/unsigned mismatch
+c:\users\jw\documents\visual studio 2015\projects\testvsopencv03\testvsopencv03\myedgedetector.cpp(142): warning C4101: 'minM': unreferenced local variable
+c:\users\jw\documents\visual studio 2015\projects\testvsopencv03\testvsopencv03\myedgedetector.cpp(142): warning C4101: 'maxM': unreferenced local variable
+c:\users\jw\documents\visual studio 2015\projects\testvsopencv03\testvsopencv03\myedgedetector.cpp(142): warning C4101: 'maxA': unreferenced local variable
+c:\users\jw\documents\visual studio 2015\projects\testvsopencv03\testvsopencv03\myedgedetector.cpp(142): warning C4101: 'minA': unreferenced local variable
   TestVSOpenCV03.vcxproj -> C:\Users\JW\Documents\Visual Studio 2015\Projects\TestVSOpenCV03\Debug\TestVSOpenCV03.exe
   TestVSOpenCV03.vcxproj -> C:\Users\JW\Documents\Visual Studio 2015\Projects\TestVSOpenCV03\Debug\TestVSOpenCV03.pdb (Full PDB)
